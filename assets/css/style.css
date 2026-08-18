@@ -538,6 +538,19 @@ main { max-width: var(--max-width); margin: 0 auto; background: var(--bg); }
 }
 .concern-lead { text-align: center; font-size: 16px; color: var(--text-muted); margin: 34px 0 0; }
 
+/* ===== 料金の目安（トップページ） ===== */
+.price-grid {
+  max-width: 720px; margin: 0 auto; background: #fff; border: 1px solid var(--border); border-radius: 4px; overflow: hidden;
+}
+.price-row {
+  display: flex; align-items: baseline; justify-content: space-between;
+  padding: 22px 32px; border-bottom: 1px solid var(--border); font-size: 16px;
+}
+.price-row:last-child { border-bottom: none; }
+.price-row-label { color: var(--text); font-weight: 500; }
+.price-row-value { color: var(--accent); font-weight: 700; font-size: 20px; white-space: nowrap; }
+.price-cta { text-align: center; margin-top: 36px; display: flex; flex-direction: column; align-items: center; gap: 16px; }
+
 /* ===== お客様の声 写真つき ===== */
 .voice-photo { width: 100%; height: 150px; object-fit: cover; border-radius: 4px 4px 0 0; margin: -1px -1px 0; display: block; }
 .voice-card { padding: 0 0 34px; overflow: hidden; }
@@ -713,6 +726,9 @@ main { max-width: var(--max-width); margin: 0 auto; background: var(--bg); }
   .blog-item { grid-template-columns: 1fr; gap: 8px; }
   .page-header { padding: 48px 20px 42px; }
   .page-header h1 { font-size: 24px; }
+
+  .price-row { padding: 18px 20px; font-size: 15px; }
+  .price-row-value { font-size: 18px; }
 
   .trust-grid { grid-template-columns: 1fr 1fr; gap: 28px 20px; margin-top: 44px; }
   .before-after-grid { grid-template-columns: 1fr; gap: 16px; }
